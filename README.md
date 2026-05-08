@@ -6,14 +6,16 @@
 
 ## 运行方式
 
-Windows 下建议使用 CMake 生成 Visual Studio 工程，然后直接运行 `CardGame` 可执行文件。
+仓库里已经带了一个可直接运行的 Windows Debug 包，路径是 `dist/windows-debug/CardGame.exe`，双击就能启动。
+
+如果你想自己重新构建，Windows 下也可以使用 CMake 生成 Visual Studio 工程，然后运行 `CardGame` 可执行文件。
 
 ```powershell
 cmake -S . -B build -G "Visual Studio 17 2022" -A Win32
 cmake --build build --config Debug
 ```
 
-生成后的资源会自动复制到可执行文件旁边的 `Resources` 目录。
+生成后的资源会自动复制到可执行文件旁边的 `Resources` 目录；仓库里的 `dist/windows-debug/` 目录已经包含了运行所需的 exe、DLL 和资源。
 
 ## 工程入口
 
