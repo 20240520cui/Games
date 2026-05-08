@@ -1,0 +1,9 @@
+/build/
+/bin/
+/out/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.log
+*.cache
